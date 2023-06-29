@@ -35,7 +35,6 @@ img {
 
 .container {
   width: 1158px;
-  align-items: center;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -66,6 +65,8 @@ img {
 }
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 76px;
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -125,6 +126,8 @@ img {
 }
 
 .contacts-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 40px;
 }
 
@@ -133,6 +136,8 @@ img {
 }
 
 .contact-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -156,6 +161,8 @@ img {
 /* ===================================== HERO ========================================== */
 
 .hero {
+  background-image: url(../images/hero-bg-picture/background-picture.jpg);
+  background-size: cover;
   background-color: #2e2f42;
   text-align: center;
   padding-top: 188px;
@@ -344,6 +351,48 @@ img {
   padding-right: 16px;
 }
 
+.team-links-item{
+  display: flex;
+  gap: var(--indent);
+  justify-content: center;
+}
+
+.team-links{
+  --tems: 4;
+}
+
+.added-margin{
+  margin-bottom: 8px;
+}
+
+/* ===================================== CUSTOMERS ========================================== */
+.customers {
+  padding-top: 120px;
+padding-bottom: 120px;
+text-align: center;
+}
+
+/* .customers-style {
+} */
+
+.customer-list {
+  display: flex;
+  gap: var(--indent);
+  justify-content: center;
+}
+
+.customer-item {
+--items: 6;
+}
+
+.mega-glushka{
+  padding-top:20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: tomato;
+  width: 168px;
+  height: 88px;
+}
 /* ===================================== FOOTER ========================================== */
 
 .page-footer {
@@ -355,9 +404,9 @@ img {
   margin-right: auto;
 }
 
-/* .style-footer{
-
-} */
+.style-footer{
+ display: flex;
+} 
 
 .logo-second {
   display: inline-block;
@@ -388,6 +437,25 @@ img {
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   max-width: 264px;
+}
+
+  .footer-nav-text {
+    color: var(--main-white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    
+}
+
+.style-footer {
+}
+
+.footer-left-side {
+  margin-right: 120px;
+}
+
+.footer-centr {
 }
 
 /* ================================= PORTFOLIO-MAIN ==================================================== */
@@ -480,4 +548,11 @@ img {
   padding-left: 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.card-link-style:focus,
+.card-link-style:hover {
+  border: 1px solid var(--cloud, #F4F4FD);
+  background: var(--white, #FFF);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
