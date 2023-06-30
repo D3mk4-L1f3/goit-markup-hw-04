@@ -430,11 +430,16 @@ text-align: center;
   color: var(--customers-link-color);
 }
 
+.current-color{
+  fill: currentColor;
+}
+
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--hover-and-focus-color);
   color: var(--hover-and-focus-color);
 }
+
 
 /* ===================================== FOOTER ========================================== */
 
